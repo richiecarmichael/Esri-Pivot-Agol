@@ -352,6 +352,20 @@ $(document).ready(function () {
                     case 'pdf':
                     case 'tile package':
                     case 'windows mobile package':
+                    case 'vector tile service':
+                    case 'vector tile package':
+                    case 'scene service':
+                    case 'project template':
+                    case 'project package':
+                    case 'kml collection':
+                    case 'form':
+                    case 'file geodatabase':
+                    case 'task file':
+                    case 'mobile map package':
+                    case 'web scene':
+                    case 'operation view':
+                    case 'native application':
+                    case 'cityengine web scene':
                         color = '#800080';
                         break;
                     case 'mobile application':
@@ -361,7 +375,7 @@ $(document).ready(function () {
                         color = '#FFFF00';
                         break;
                     default:
-                        console.log(t);
+                        console.log('Unknown Item Type: ' + t);
                         break;
                 }
                 context.beginPath();
